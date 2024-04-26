@@ -1,5 +1,12 @@
+import { ToastProvider } from "@/context/Toast";
+import ToastTest from "@/pages/ToastTest";
+
 function App() {
-  return <div>App</div>;
+  return (
+    <ToastProvider>
+      <ToastTest />
+    </ToastProvider>
+  );
 }
 
 export default App;
